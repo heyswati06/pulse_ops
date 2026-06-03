@@ -1,0 +1,21 @@
+Started by timer
+Building in workspace /var/jenkins/workspace/cyberflow-scan-job
+[INFO] Scanning for projects...
+[INFO] Building project: ref-data-service
+[INFO] Running Cyberflow security scan...
+[INFO] Connecting to Cyberflow server...
+[INFO] Scan started at 2026-05-27 09:15:42
+[INFO] Scanning dependencies...
+[INFO] Analyzing: log4j-2.14.0
+[HIGH] CVE-2021-44228 detected in log4j-2.14.0 - Remote code execution vulnerability
+[HIGH] CVE-2021-45046 detected in log4j-2.14.0 - Incomplete fix for CVE-2021-44228
+[INFO] Analyzing: spring-boot-2.5.0
+[MEDIUM] CVE-2022-22965 detected in spring-boot-2.5.0 - Spring4Shell RCE
+[INFO] Analyzing: jackson-databind-2.12.0
+[HIGH] CVE-2022-42003 detected in jackson-databind-2.12.0 - Stack overflow vulnerability
+[INFO] Scan complete. Found 3 HIGH, 1 MEDIUM severity vulnerabilities.
+[ERROR] Cyberflow scan FAILED - HIGH severity vulnerabilities must be resolved before build can proceed.
+[ERROR] Build cannot continue. Please remediate HIGH severity findings.
+BUILD FAILED
+Total time: 3 minutes 22 seconds
+Finished: FAILURE
